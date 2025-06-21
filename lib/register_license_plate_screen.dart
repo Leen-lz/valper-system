@@ -149,7 +149,7 @@ class _RegisterLicensePlateScreenState
       // Show user-friendly error message
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text('Failed to capture image. Please try again.'),
             backgroundColor: Colors.red,
             duration: Duration(seconds: 2),

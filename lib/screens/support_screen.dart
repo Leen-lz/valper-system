@@ -195,9 +195,9 @@ class _SupportScreenState extends State<SupportScreen> {
                       if (isUser) const SizedBox(width: 8),
                       if (isUser)
                         const CircleAvatar(
-                          child: Icon(Icons.person, size: 18, color: Colors.white),
                           backgroundColor: Colors.blueGrey,
                           radius: 16,
+                          child: Icon(Icons.person, size: 18, color: Colors.white),
                         ),
                     ],
                   ),

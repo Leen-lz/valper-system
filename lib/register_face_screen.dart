@@ -307,7 +307,7 @@ class _RegisterFaceScreenState extends State<RegisterFaceScreen> with SingleTick
                                                   _isRecording 
                                                       ? 'Rotate your face\nslowly clockwise\nfor 4 seconds'
                                                       : 'Position face here',
-                                                  style: TextStyle(
+                                                  style: const TextStyle(
                                                     color: Colors.white,
                                                     fontSize: 12,
                                                   ),
@@ -371,7 +371,7 @@ class _RegisterFaceScreenState extends State<RegisterFaceScreen> with SingleTick
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Icon(
+                                      const Icon(
                                         Icons.videocam,
                                         color: Colors.white,
                                         size: 48,
@@ -412,7 +412,7 @@ class _RegisterFaceScreenState extends State<RegisterFaceScreen> with SingleTick
                     children: [
                       ElevatedButton.icon(
                         icon: Icon(_isRecording ? Icons.stop : Icons.videocam, size: 18),
-                        label: Text(_isRecording ? 'Recording...' : 'Record', style: TextStyle(fontSize: 12)),
+                        label: Text(_isRecording ? 'Recording...' : 'Record', style: const TextStyle(fontSize: 12)),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: _isRecording ? Colors.red : Colors.white,
                           foregroundColor: _isRecording ? Colors.white : Colors.blue[800],

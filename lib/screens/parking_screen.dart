@@ -23,16 +23,16 @@ class ParkingScreen extends StatelessWidget {
           children: [
             TileLayer(
               urlTemplate: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-              subdomains: ['a', 'b', 'c'],
+              subdomains: const ['a', 'b', 'c'],
               userAgentPackageName: 'com.example.valper',
             ),
-            MarkerLayer(
+            const MarkerLayer(
               markers: [
                 Marker(
                   point: LatLng(11.7756, 124.8862),
                   width: 40,
                   height: 40,
-                  child: const Icon(Icons.location_on, color: Colors.red, size: 40),
+                  child: Icon(Icons.location_on, color: Colors.red, size: 40),
                 ),
               ],
             ),
